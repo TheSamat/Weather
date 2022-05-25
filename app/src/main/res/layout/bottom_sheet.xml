@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/design_bottom_sheet"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    app:behavior_peekHeight="25dp"
+    app:behavior_hideable="false"
+    >
+
+    <FrameLayout
+        android:id="@+id/sheet"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        android:background="@drawable/rounded"
+        android:alpha="1"
+        >
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_remove_24"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center|top"
+            />
+        <TextView
+            android:id="@+id/bottom_sheet_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/input_city"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/white"
+            android:textSize="30sp"/>
+        <EditText
+            android:id="@+id/user_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="75dp"
+            android:layout_marginHorizontal="20dp"
+            />
+
+        <Button
+            android:id="@+id/button_bottom_sheet"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="105dp"
+            android:layout_marginTop="150dp"
+            android:backgroundTint="@color/button"
+            android:onClick="getWeatherDetails"
+            android:text="@string/button_show_city"
+            android:textColor="@color/button_text"
+
+            android:textSize="20sp" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

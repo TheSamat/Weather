@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="now_data">тут должно быть время</string>
+    <string name="city">тут должно быть город</string>
+    <string name="input_city">Введите город</string>
+    <string name="button_show_city">Показать</string>
+    <string name="hint_bottom_sheet">сюда пиши</string>
+    <string name="pressure">pressure</string>
+    <string name="humidity">humidity</string>
+</resources>
